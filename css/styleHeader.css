@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+/* -------------Header------------- */
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  z-index: 5;
+}
+
+.bck-menu {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  background-image: url(../images/header/moon.jpg);
+  background-position: 50% 45%;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+
+.menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  border-bottom: 3px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 139, 0.75),
+    2px 2px 5px rgba(255, 0, 0, 0.25);
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  height: 75px;
+  padding: 15px;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu img {
+  color: white;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  color: black;
+  font-family: "Syne Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.menu li a:hover {
+  color: rgba(0, 0, 139, 0.9);
+  text-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
+    1px 1px 5px rgba(0, 255, 255, 0.75);
+}

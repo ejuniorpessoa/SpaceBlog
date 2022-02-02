@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.carrossel {
+  margin: 0 auto;
+  width: 1024px;
+  height: 576px;
+  overflow: hidden; /* esconder outras imgs*/
+  border-radius: 15px;
+  transition: all 0.4s;
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 5120px;
+  display: flex;
+}
+
+/* tamanho de cada img  */
+.image img {
+  width: 1024px;
+  height: 576px;
+}
+
+#atual {
+  margin-left: 0;
+  transition: all 2s;
+}
+
+.btn {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7rem;
+  margin-top: -5px;
+}
+
+.btn:hover {
+  transform: scale(1.25);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+}
+
+.btn .fa-chevron-left {
+  transform: rotate(-90deg);
+}
+
+.btn .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+#back {
+  top: 45%;
+  left: 0;
+}
+
+#next {
+  top: 45%;
+  right: 0;
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 1024px;
+  margin-top: -45px;
+}
+
+.balls div {
+  transition: all 0.5s;
+  border: 3px solid cyan;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.balls div:hover {
+  background-color: white;
+}
+
+.imgAtual {
+  transition: all 0.5s;
+  background-color: white;
+}

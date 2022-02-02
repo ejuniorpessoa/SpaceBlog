@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Syne+Mono&display=swap");
+
+/* -------------Footer------------- */
+
+.footer-bck {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 5px;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------- Contato --------- */
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+
+.contato ul {
+  display: flex;
+  flex-flow: wrap row;
+  flex: 1;
+}
+
+.contato li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.contato a {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-family: "Playfair Display SC", Georgia, serif;
+}
+
+.espaco-img {
+  margin-right: 10px;
+}
+
+.espaco-git {
+  margin-right: 10px;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 2px 2px 3px rgba(17, 0, 255, 0.75),
+    2px 2px 5px rgba(0, 255, 255, 1);
+}
+
+.footer .contato {
+  width: 60%;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.div-footer .logo {
+  text-transform: uppercase;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 1.75rem;
+  letter-spacing: 0.25rem;
+  padding: 15px;
+}
+
+/* ---------- copyright ----------*/
+
+.copyright {
+  display: flex;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  padding: 10px;
+}
+
+.color-footer {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bck-color {
+  background-color: rgba(255, 255, 255, 0.5);
+}

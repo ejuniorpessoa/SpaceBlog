@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.faq-lista {
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+
+.faq-lista dt {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: darkred;
+  cursor: pointer;
+}
+
+.faq-lista dt::before {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 8px;
+  background-color: rgba(0, 0, 139, 0.85);
+  margin-right: 10px;
+}
+
+/* ------------------ JS ------------------ */
+.js-faq dt::after {
+  content: "⇣";
+  margin-left: 10px;
+}
+
+.js-faq dt.ativo::after {
+  content: "⇡";
+}
+
+/* ------------- Animação FAQ ------------ */
+.js-faq dd {
+  display: none;
+}
+
+.js-faq dd.ativo {
+  display: block;
+  animation: faqShow 0.5s forwards;
+}
+
+@keyframes faqShow {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
