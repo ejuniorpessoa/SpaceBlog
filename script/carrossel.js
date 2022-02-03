@@ -1,5 +1,4 @@
 initCarrosel = () => {
-
     const balls = document.querySelector(".balls");
     const quant = document.querySelectorAll(".container .image");
     const imagem = document.getElementById("atual");
@@ -8,16 +7,13 @@ initCarrosel = () => {
     let atual = 0;
     let rolar = true;
 
-
     for (let i = 0; i < quant.length; i++) {
         let div = document.createElement("div");
         div.id = i
         balls.appendChild(div);
     }
     document.getElementById("0").classList.add("imgAtual");
-
     let pos = document.querySelectorAll(".balls div");
-
     for (let i = 0; i < pos.length; i++) {
         pos[i].addEventListener("click", () => {
             atual = pos[i].id;
@@ -25,19 +21,16 @@ initCarrosel = () => {
             slide();
         });
     }
-
     back.addEventListener("click", () => {
         atual--
         rolar = false;
         slide();
     });
-
     next.addEventListener("click", () => {
         atual++;
         rolar = false;
         slide();
     });
-
     slide = () => {
         if (atual >= quant.length) {
             atual = 0;
@@ -49,7 +42,6 @@ initCarrosel = () => {
         imagem.style.marginLeft = -1024 * atual + "px";
         document.getElementById(atual).classList.add("imgAtual");
     }
-
     setInterval(() => {
         if (rolar) {
             atual++;
@@ -58,8 +50,6 @@ initCarrosel = () => {
             rolar = true;
         }
     }, 4000);
-
     slide();
-
 }
 initCarrosel();

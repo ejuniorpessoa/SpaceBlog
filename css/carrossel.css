@@ -12,12 +12,16 @@
   overflow: hidden; /* esconder outras imgs*/
   border-radius: 15px;
   transition: all 0.4s;
-  margin-bottom: 2rem;
 }
 
 .container {
   width: 5120px;
   display: flex;
+}
+
+.padding-carrossel {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* tamanho de cada img  */
@@ -31,7 +35,7 @@
   transition: all 2s;
 }
 
-.btn {
+.btn-carrossel {
   position: absolute;
   padding: 10px;
   text-align: center;
@@ -44,16 +48,16 @@
   margin-top: -5px;
 }
 
-.btn:hover {
+.btn-carrossel:hover {
   transform: scale(1.25);
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
 }
 
-.btn .fa-chevron-left {
+.btn-carrossel .fa-chevron-left {
   transform: rotate(-90deg);
 }
 
-.btn .fa-chevron-right {
+.btn-carrossel .fa-chevron-right {
   transform: rotate(90deg);
 }
 

@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 /* -------------Header------------- */
 header {
   display: flex;
@@ -9,7 +16,7 @@ header {
 
 .menu {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 75px;
   z-index: 5;
 }
@@ -17,7 +24,7 @@ header {
 .bck-menu {
   display: flex;
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   height: 75px;
   position: fixed;
   background-image: url(../images/header/moon.jpg);
