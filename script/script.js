@@ -1,4 +1,3 @@
-
 initTabNav = () => {
     const tabMenu = document.querySelectorAll(".js-tabmenu li");
     const tabContent = document.querySelectorAll(".js-tabcontent section");
@@ -11,7 +10,6 @@ initTabNav = () => {
             });
             tabContent[index].classList.add(activeClass);
         }
-
         tabMenu.forEach((itemMenu, idx) => {
             itemMenu.addEventListener("click", () => {
                 activeBar(idx);
@@ -21,7 +19,7 @@ initTabNav = () => {
 }
 initTabNav();
 
-initFaq = () => {
+initShowFaq = () => {
     const faqDt = document.querySelectorAll(".faq-lista dt");
     const activeClass = "ativo";
     if (faqDt.length !== 0) {
@@ -35,7 +33,7 @@ initFaq = () => {
         });
     }
 }
-initFaq();
+initShowFaq();
 
 initScrollAnimation = () => {
     const sections = document.querySelectorAll(".js-scroll");
@@ -59,18 +57,19 @@ initScrollAnimation = () => {
 }
 initScrollAnimation();
 
-InitScrollSuave = () => {
-    const navInternos = document.querySelectorAll(".js-menu a[href^='#']");
-    if (navInternos.length !== 0) {
-        navSuave = (event) => {
+initScrollSuave = () => {
+    const navLinksInternos = document.querySelectorAll(".js-menu a[href^='#']");
+    if (navLinksInternos.length !== 0) {
+        scrollToSection = (event) => {
             event.preventDefault();
             const href = event.currentTarget.getAttribute("href");
             const section = document.querySelector(href);
-            section.scrollIntoView({ behavior: "smooth", block: "start", });
+            const topo = section.offsetTop;
+            window.scrollTo({ top: topo - 80, behavior: "smooth" });
         }
-        navInternos.forEach((itemMenu) => {
-            itemMenu.addEventListener("click", navSuave);
+        navLinksInternos.forEach((link) => {
+            link.addEventListener("click", scrollToSection);
         });
     }
 }
-InitScrollSuave();
+initScrollSuave();

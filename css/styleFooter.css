@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Syne+Mono&display=swap");
-
-/* -------------Footer------------- */
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 .footer-bck {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.95);
   padding: 5px;
   bottom: 0;
 }
-
 .div-footer {
   display: flex;
   flex-direction: row;
@@ -18,79 +20,67 @@
   align-items: center;
   justify-content: space-between;
 }
-
 /* ------- Contato --------- */
-
 .contato {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: wrap column;
 }
-
 .contato ul {
   display: flex;
   flex-flow: wrap row;
   flex: 1;
 }
-
 .contato li {
   display: flex;
   align-items: center;
   padding: 15px;
 }
-
 .contato a {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
-  font-family: "Playfair Display SC", Georgia, serif;
+  font-family: "Poppins", sans-serif;
 }
-
 .espaco-img {
   margin-right: 10px;
 }
-
 .espaco-git {
   margin-right: 10px;
 }
-
 a:hover {
   color: white;
   text-shadow: 2px 2px 3px rgba(17, 0, 255, 0.75),
     2px 2px 5px rgba(0, 255, 255, 1);
+  text-decoration: none;
 }
-
 .footer .contato {
   width: 60%;
   height: 45px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-
 .div-footer .logo {
   text-transform: uppercase;
-  font-family: "Sedgwick Ave", cursive;
-  font-size: 1.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 2.25rem;
   letter-spacing: 0.25rem;
   padding: 15px;
 }
-
 /* ---------- copyright ----------*/
-
 .copyright {
   display: flex;
   margin: 0 auto;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   padding: 10px;
 }
-
 .color-footer {
   color: rgba(255, 255, 255, 0.85);
 }
-
 .bck-color {
   background-color: rgba(255, 255, 255, 0.5);
 }

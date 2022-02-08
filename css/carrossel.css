@@ -4,7 +4,6 @@
   padding: 0px;
   border: 0px;
 }
-
 .carrossel {
   margin: 0 auto;
   width: 1024px;
@@ -13,28 +12,23 @@
   border-radius: 15px;
   transition: all 0.4s;
 }
-
 .container {
   width: 5120px;
   display: flex;
 }
-
 .padding-carrossel {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
 /* tamanho de cada img  */
 .image img {
   width: 1024px;
   height: 576px;
 }
-
 #atual {
   margin-left: 0;
   transition: all 2s;
 }
-
 .btn-carrossel {
   position: absolute;
   padding: 10px;
@@ -47,30 +41,24 @@
   font-size: 1.7rem;
   margin-top: -5px;
 }
-
 .btn-carrossel:hover {
   transform: scale(1.25);
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
 }
-
 .btn-carrossel .fa-chevron-left {
   transform: rotate(-90deg);
 }
-
 .btn-carrossel .fa-chevron-right {
   transform: rotate(90deg);
 }
-
 #back {
   top: 45%;
   left: 0;
 }
-
 #next {
   top: 45%;
   right: 0;
 }
-
 .balls {
   display: flex;
   justify-content: center;
@@ -78,7 +66,6 @@
   width: 1024px;
   margin-top: -45px;
 }
-
 .balls div {
   transition: all 0.5s;
   border: 3px solid cyan;
@@ -87,11 +74,9 @@
   margin-right: 15px;
   cursor: pointer;
 }
-
 .balls div:hover {
   background-color: white;
 }
-
 .imgAtual {
   transition: all 0.5s;
   background-color: white;

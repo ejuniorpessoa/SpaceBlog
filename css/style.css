@@ -1,55 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
-
-/* ----------- All -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   border: 0px;
 }
-
 body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
-
 li {
   list-style: none;
   cursor: pointer;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-
 /* ----------BODY---------- */
-
 .bck-section {
-  background-color: rgba(255, 217, 0, 0.25);
+  background-color: rgba(255, 217, 0, 0.15);
   width: 100vw;
   padding-bottom: 3rem;
   padding-top: 1rem;
 }
-
-.bck-section-2 {
-  background-color: rgba(255, 217, 0, 0.5);
-  width: 100vw;
-  padding-bottom: 3rem;
-  padding-top: 1rem;
-}
-
 .main {
   width: 100vw;
   margin: 0 auto;
 }
-
 .titulo {
   font-family: "Playfair Display SC", Georgia, serif;
   width: 700px;
@@ -62,9 +46,7 @@ img {
   text-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
     1px 1px 5px rgba(0, 255, 255, 0.75);
 }
-
 /* --------- Lista imgs --------- */
-
 .space-container {
   display: flex;
   justify-content: space-between;
@@ -76,7 +58,6 @@ img {
   max-width: 1000px;
   padding-bottom: 3rem;
 }
-
 .space-lista {
   height: 370px;
   max-width: 300px;
@@ -84,38 +65,31 @@ img {
   overflow-x: hidden;
   flex: 2 0 180px;
 }
-
 .space-lista::-webkit-scrollbar {
   display: block;
   width: 18px;
 }
-
 .space-lista::-webkit-scrollbar-thumb {
   background-color: rgba(255, 217, 0, 0.6);
   border-radius: 8px;
   border-left: 3px solid rgba(255, 255, 255, 0.75);
   border-right: 3px solid rgba(255, 255, 255, 0.75);
 }
-
 .space-lista::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 217, 0, 1);
 }
-
 .space-lista::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 .space-descricao {
   flex: 3 0 350px;
   margin-left: 2rem;
   min-width: 400px;
   max-width: 600px;
 }
-
 .space-descricao section {
   margin-bottom: 3rem;
 }
-
 .space-descricao h2 {
   display: flex;
   align-items: center;
@@ -126,8 +100,8 @@ img {
   text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.75),
     1px 1px 1px rgba(0, 255, 255, 0.75);
   letter-spacing: 0.15rem;
+  font-family: "Poppins", sans-serif;
 }
-
 .space-descricao h2::before {
   display: inline-block;
   content: "";
@@ -138,28 +112,23 @@ img {
   box-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
     1px 1px 5px rgba(0, 255, 255, 0.75);
 }
-
 .space-descricao p {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.25rem;
   margin-bottom: 1rem;
   letter-spacing: 0.05rem;
   font-weight: normal;
+  font-family: "Poppins", sans-serif;
 }
-
 /* ------------- JS ----------- */
-
 .js-tabcontent section {
   display: none;
 }
-
 .js-tabcontent section.ativo {
   display: block;
   animation: show 0.5s forwards;
 }
-
 /* ------------- Animação Section TabNav ------------ */
-
 @keyframes show {
   from {
     opacity: 0;
@@ -170,14 +139,12 @@ img {
     transform: translate3d(0px, 0, 0);
   }
 }
-
 /* --------------------- Animação Scroll Window ------------------------ */
 .js-scroll {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
   transition: 0.3s;
 }
-
 .js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);

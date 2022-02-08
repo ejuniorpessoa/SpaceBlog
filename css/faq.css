@@ -1,37 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   border: 0px;
 }
-
+.faq-bckground {
+  background-image: url(../images/faq/faq-bckground.jpg);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .faq-lista {
   width: 60vw;
   margin-left: 10%;
   min-width: 550px;
   box-sizing: border-box;
 }
-
+.faq-lista dt,
+dl {
+  font-family: "Poppins", sans-serif;
+}
 .faq-lista dt {
   display: flex;
   width: 80%;
   margin: 0 auto;
   align-items: center;
-  font-family: "IBM Plex Mono", monospace;
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: darkred;
   cursor: pointer;
+  letter-spacing: 0.05rem;
 }
-
 .faq-lista dd {
   display: flex;
   width: 60%;
   margin-left: 15%;
 }
-
 .faq-lista dt::before {
   display: inline-block;
   content: "";
@@ -42,27 +48,22 @@
     1px 1px 5px rgba(0, 255, 255, 0.75);
   margin-right: 10px;
 }
-
 /* ------------------ JS ------------------ */
 .js-faq dt::after {
   content: "⇣";
   margin-left: 10px;
 }
-
 .js-faq dt.ativo::after {
   content: "⇡";
 }
-
 /* ------------- Animação FAQ ------------ */
 .js-faq dd {
   display: none;
 }
-
 .js-faq dd.ativo {
   display: block;
   animation: faqShow 0.5s forwards;
 }
-
 @keyframes faqShow {
   from {
     opacity: 0;
