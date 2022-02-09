@@ -18,67 +18,62 @@
         </div>
         <nav>
             <ul>
-                <li><img src="images/header/home-20.png" alt="home page"><a href="index.html">Home</a></li>
+                <li><img src="images/header/home-20.png" alt="home page"><a href="/index.html">Home</a></li>
+                <li><img src="images/header/question-25.png" alt="faq"><a href="/index.html?faq">FAQ</a></li>
+                <li><img src="images/header/assinatura-20.png" alt=""><a href="/index.html?signature">Signature</a></li>
                 <li><img src="images/header/book-20.png" alt="history"><a href="history.html">History</a></li>
                 <li><img src="images/header/contact-20.png" alt="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="grid-section contato" id="contato">
+        <section class="bck-contato">
             <h1 class="titulo">Contato</h1>
-            <div class="mapa">
-                <img src="img/mapa.png" alt="mapa">
-            </div>
-            <ul class="dados">
-                <li>ejunior.pessoa@gmail.com</li>
-                <li><a href="tel:+5544997110856">+55 (44) 99711-0856</a></li>
-                <li>Avenida Senador Petrônio Portela</li>
-                <li>Maringá - PR</li>
-            </ul>
-        </section>
-        <section class="contato" id="#contato">
-            <h2>Formulário de Contato</h2>
-            <p>Deixe-nos saber suas perguntas, sugestões ou dúvidas, preenchendo o formulário de contato abaixo. </p>
-            <div class="form-group">
-                <div class="group-name">
-                    <label for="Name">Nome</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Nome" required minlength="4"
-                        maxlength="15" size="20">
-                    <input type="text" name="lastName" id="lastName" placeholder="Sobrenome" required minlength="4"
-                        maxlength="15" size="20">
+            <section class="contato" id="#contato">
+                <p class="p-contato">Deixe-nos saber suas perguntas, sugestões ou dúvidas, preenchendo o formulário de
+                    contato abaixo.</p>
+                <div class="form-group">
+                    <div class="group row">
+                        <div>
+                            <label for="name">Nome</label>
+                            <input class="name" type="text" name="firstName" id="firstName" placeholder="Nome" required
+                                minlength="4" maxlength="15" size="20">
+                        </div>
+                        <div class="column">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input class="name" type="text" name="lastName" id="lastName" placeholder="Sobrenome"
+                                required minlength="4" maxlength="15" size="20">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <label for="e-mail">E-mail</label>
+
+                        <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required minlength="4"
+                            maxlength="25" size="20">
+                    </div>
+                    <div class="group">
+                        <label for="telefone">Telefone</label>
+
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 0 0000-0000" required
+                            minlength="4" maxlength="25" size="20">
+                    </div>
+                    <div class="group">
+                        <label for="assunto">Assunto</label>
+                        <select name="select">
+                            <option value="sugestao">Sugestões</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="reclamacao">Reclamações</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    </div>
+                    <a class="btn-contato" href="#">Enviar</a>
                 </div>
-
-                <div class="group-name">
-                    <label for="e-mail">E-mail</label>
-
-                    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required minlength="4"
-                        maxlength="25" size="20">
                 </div>
-
-                <div class="group-name">
-                    <label for="telefone">Telefone</label>
-
-                    <input type="tel" name="telefone" id="telefone" placeholder="(00) 0 0000-0000" required
-                        minlength="4" maxlength="25" size="20">
-                </div>
-
-                <div class="group-name">
-                    <label for="assunto">Assunto</label>
-                    <select name="select">
-                        <option value="sugestao">Sugestões</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="reclamacao">Reclamações</option>
-                        <option value="outros">Outros</option>
-                    </select>
-                </div>
-
-                <div class="group-name">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                </div>
-
-            </div>
+            </section>
         </section>
     </main>
     <footer class="footer-bck" id="contact">

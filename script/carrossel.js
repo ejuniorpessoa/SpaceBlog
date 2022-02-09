@@ -6,7 +6,6 @@ initCarrosel = () => {
     const back = document.getElementById("back");
     let atual = 0;
     let rolar = true;
-
     for (let i = 0; i < quant.length; i++) {
         let div = document.createElement("div");
         div.id = i
@@ -39,7 +38,7 @@ initCarrosel = () => {
             atual = --quant.length
         }
         document.querySelector(".imgAtual").classList.remove("imgAtual");
-        imagem.style.marginLeft = -1024 * atual + "px";
+        imagem.style.marginLeft = - 512 * atual + "px";
         document.getElementById(atual).classList.add("imgAtual");
     }
     setInterval(() => {

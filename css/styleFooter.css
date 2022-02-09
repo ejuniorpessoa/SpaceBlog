@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: wrap column;
+  max-width: 100%;
 }
 .contato ul {
   display: flex;
@@ -67,7 +67,6 @@ a:hover {
   font-weight: bolder;
   font-size: 2.25rem;
   letter-spacing: 0.25rem;
-  padding: 15px;
 }
 /* ---------- copyright ----------*/
 .copyright {
@@ -83,4 +82,28 @@ a:hover {
 }
 .bck-color {
   background-color: rgba(255, 255, 255, 0.5);
+}
+.container-logo {
+  display: flex;
+  flex: 1 0 250px;
+  width: 300px;
+}
+.container-contato {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  flex: 1 0 650px;
+}
+/* ------------------ MediaQuery ------------------*/
+@media screen and (max-width: 1025px) {
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  .container-contato {
+    flex: 1 0 0px;
+  }
 }

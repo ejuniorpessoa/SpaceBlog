@@ -6,14 +6,14 @@
 }
 .carrossel {
   margin: 0 auto;
-  width: 1024px;
-  height: 576px;
+  width: 512px;
+  height: 288px;
   overflow: hidden; /* esconder outras imgs*/
   border-radius: 15px;
   transition: all 0.4s;
 }
 .container {
-  width: 5120px;
+  width: 2560px;
   display: flex;
 }
 .padding-carrossel {
@@ -22,8 +22,8 @@
 }
 /* tamanho de cada img  */
 .image img {
-  width: 1024px;
-  height: 576px;
+  width: 512px;
+  height: 288px;
 }
 #atual {
   margin-left: 0;
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  width: 1024px;
+  width: 512px;
   margin-top: -45px;
 }
 .balls div {

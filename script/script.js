@@ -58,6 +58,14 @@ initScrollAnimation = () => {
 initScrollAnimation();
 
 initScrollSuave = () => {
+    if (location.search) {/* #dps do index */
+        setTimeout(() => {
+            const href = location.search.replace("?", "#");
+            const section = document.querySelector(href);
+            const topo = section.offsetTop;
+            window.scrollTo({ top: topo - 80, behavior: "smooth" });
+        }, 750);
+    }
     const navLinksInternos = document.querySelectorAll(".js-menu a[href^='#']");
     if (navLinksInternos.length !== 0) {
         scrollToSection = (event) => {
