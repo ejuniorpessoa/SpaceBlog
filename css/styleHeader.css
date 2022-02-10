@@ -28,17 +28,32 @@ header {
   background-position: 50% 45%;
   opacity: 0.9;
   background-repeat: no-repeat;
+  border-bottom: 3px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 139, 0.75),
+    2px 2px 5px rgba(255, 0, 0, 0.25);
 }
-.menu nav {
+.logo-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100px;
+  line-height: 1;
+  left: 5%;
+  position: fixed;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.85);
+}
+#nav {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
   position: fixed;
-  border-bottom: 3px solid black;
-  box-shadow: 2px 2px 5px rgba(0, 0, 139, 0.75),
-    2px 2px 5px rgba(255, 0, 0, 0.25);
 }
 .menu ul {
   display: flex;
@@ -72,31 +87,45 @@ header {
   text-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
     1px 1px 5px rgba(0, 255, 255, 0.75);
 }
-
 .menu .ativo {
   display: none;
   height: 75px;
 }
-.menu .logo {
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  font-size: 2.25rem;
-  color: rgba(0, 0, 0, 0.9);
-  letter-spacing: 0.25rem;
+#btn-mobile {
+  display: none;
 }
+
+/* ---------------- Menu Mobile  ----------------*/
+
 /* --------------- MediaQuery ---------------- */
-@media screen and (max-width: 621px) {
-  .menu nav {
+@media screen and (max-width: 610px) {
+  #btn-menu {
+    display: block;
+    position: fixed;
+  }
+  #menu-mobile {
     display: none;
   }
   .menu .ativo {
     display: flex;
     position: fixed;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     padding-right: 1rem;
+  }
+  .logo-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-menu a {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 600;
   }
 }

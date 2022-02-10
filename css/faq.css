@@ -36,8 +36,8 @@ dl {
 }
 .faq-lista dd {
   display: flex;
-  width: 60%;
-  margin-left: 15%;
+  width: 80%;
+  max-width: 700px;
 }
 .faq-lista dt::before {
   display: inline-block;
