@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -36,7 +37,7 @@ img {
 }
 .titulo {
   font-family: "Playfair Display SC", Georgia, serif;
-  width: 700px;
+  max-width: 700px;
   font-size: 6rem;
   line-height: 1.2;
   font-weight: 400;
@@ -150,3 +151,34 @@ img {
   transform: translate3d(0, 0, 0);
 }
 /* ----------- MediaQuery ------------ */
+/* 11367 / 1025 / 801 / 601 / 480 */
+@media screen and (max-width: 1025px) {
+  .space-lista {
+    max-height: 350px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .space-lista {
+    max-height: 320px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .space-lista {
+    max-height: 280px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .space-lista {
+    max-height: 240px;
+  }
+  .menu nav ul {
+    width: 100vw;
+  }
+  .footer {
+    width: 100vw;
+  }
+  .titulo {
+    font-size: 5rem;
+    text-align: left;
+  }
+}

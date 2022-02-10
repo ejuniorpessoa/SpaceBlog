@@ -22,12 +22,14 @@
 .signature {
   display: flex;
   flex-direction: column;
-  flex: 1 0 180px;
+  flex: 1 0 250px;
   align-items: center;
   background-color: #282a3e;
-  max-width: 250px;
+  max-width: 280px;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   font-family: "Poppins", sans-serif;
 }
 /* --------------------- Nome Assinatura ----------------------- */
@@ -87,6 +89,8 @@
 .flex-lista {
   display: flex;
   align-items: center;
+  width: 100%;
+  min-width: 220px;
 }
 .flex-lista span {
   padding-right: 5px;
@@ -96,7 +100,7 @@
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.25);
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 10px;
   width: 120px;
   text-decoration: none;
@@ -107,4 +111,27 @@
 }
 .signature .btn-plano:visited {
   color: white;
+}
+
+/* -------------- MediaQuery -------------- */
+@media screen and (max-width: 920px) {
+  .signature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .signature {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .order1 {
+    order: 5;
+  }
+  .order2 {
+    order: 1;
+  }
+  .order3 {
+    order: -5;
+  }
 }

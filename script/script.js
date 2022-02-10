@@ -38,7 +38,7 @@ initShowFaq();
 initScrollAnimation = () => {
     const sections = document.querySelectorAll(".js-scroll");
     if (sections.length !== 0) {
-        const windowMetade = (window.innerHeight * 0.85);
+        const windowMetade = (window.innerHeight * 0.75);
         const activeClass = "ativo";
         animaScroll = () => {
             sections.forEach((section) => {

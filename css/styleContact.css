@@ -28,6 +28,7 @@ li {
 .contato {
   width: 100vw;
   display: flex;
+  flex-direction: column;
 }
 .bck-contato h1 {
   display: flex;

@@ -11,9 +11,9 @@
   padding-bottom: 2rem;
 }
 .faq-lista {
-  width: 60vw;
+  max-width: 100%;
   margin-left: 10%;
-  min-width: 550px;
+  min-width: 200px;
   box-sizing: border-box;
 }
 .faq-lista dt,
@@ -22,7 +22,8 @@ dl {
 }
 .faq-lista dt {
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  max-width: 100%;
   margin: 0 auto;
   align-items: center;
   font-size: 1.25rem;
