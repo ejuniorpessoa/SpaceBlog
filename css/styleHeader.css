@@ -5,127 +5,151 @@
   padding: 0px;
   border: 0px;
 }
-header {
-  display: flex;
-  width: 100%;
-  height: 70px;
-}
-.menu {
+#menu {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 75px;
   z-index: 5;
+  position: fixed;
 }
 .bck-menu {
   display: flex;
-  margin: 0 auto;
   width: 100vw;
+  margin: 0 auto;
   height: 75px;
   position: fixed;
-  background-image: url(../images/header/moon.jpg);
-  background-position: 50% 45%;
-  opacity: 0.9;
+  opacity: 0.75;
+  background-image: url(../images/header/bck-menu.png);
+  background-position: cover;
   background-repeat: no-repeat;
   border-bottom: 3px solid black;
   box-shadow: 2px 2px 5px rgba(0, 0, 139, 0.75),
     2px 2px 5px rgba(255, 0, 0, 0.25);
 }
-.logo-menu {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 100px;
-  line-height: 1;
-  left: 5%;
-  position: fixed;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  font-size: 1.75rem;
-  letter-spacing: 0.1rem;
-  color: rgba(0, 0, 0, 0.85);
-}
-#nav {
+#container-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  position: fixed;
+  justify-content: space-between;
+  width: 95vw;
 }
-.menu ul {
+#logo-menu {
+  display: flex;
+  z-index: 7;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+#menu-mobile {
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
-  height: 75px;
-  padding: 15px;
-  justify-content: space-around;
   list-style: none;
 }
-.menu img {
-  color: white;
-}
-.menu li {
+#menu li {
   display: flex;
   align-items: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
 }
-.menu li a {
+#menu li a {
   text-decoration: none;
   display: block;
-  padding: 10px 10px;
-  color: rgba(0, 0, 0, 0.85);
+  padding: 0.5rem;
+  color: black;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.1em;
-}
-.menu li a:hover {
-  color: rgba(0, 0, 0, 1);
-  text-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
-    1px 1px 5px rgba(0, 255, 255, 0.75);
-}
-.menu .ativo {
-  display: none;
-  height: 75px;
+  z-index: 7;
 }
 #btn-mobile {
   display: none;
+  position: fixed;
+  align-items: center;
+  z-index: 7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
+/* --------------- MediaQuery ---------------- */
+@media (max-width: 660px) {
+  #menu-mobile {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 75px;
+    right: 0rem;
+    background-color: rgba(128, 128, 128, 0.95);
+    z-index: 10;
+    transition: 0.6s;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu-mobile {
+    height: calc(100vh - 75px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu-mobile a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburguer {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
 
-/* ---------------- Menu Mobile  ----------------*/
-
-/* --------------- MediaQuery ---------------- */
-@media screen and (max-width: 610px) {
-  #btn-menu {
-    display: block;
-    position: fixed;
+@media (max-width: 801px) {
+  #menu-mobile li a {
+    font-size: 0.85rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
-  #menu-mobile {
-    display: none;
-  }
-  .menu .ativo {
-    display: flex;
-    position: fixed;
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 1rem;
-  }
-  .logo-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logo-menu a {
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    padding-left: 0.5rem;
-    color: rgba(0, 0, 0, 0.9);
-    font-weight: 600;
+  #menu-mobile li img {
+    width: 15px;
+    height: 15px;
   }
 }

@@ -29,10 +29,10 @@ img {
   background-color: rgba(255, 217, 0, 0.15);
   width: 100vw;
   padding-bottom: 3rem;
-  padding-top: 1rem;
 }
 .main {
   width: 100vw;
+  padding-top: 5rem;
   margin: 0 auto;
 }
 .titulo {
@@ -83,7 +83,7 @@ img {
   background-color: transparent;
 }
 .space-descricao {
-  flex: 3 0 350px;
+  flex: 2 0 150px;
   margin-left: 2rem;
   min-width: 400px;
   max-width: 600px;
@@ -180,5 +180,24 @@ img {
   .titulo {
     font-size: 5rem;
     text-align: left;
+  }
+}
+@media screen and (max-width: 761px) {
+  .space-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .space-container .space-lista {
+    margin-bottom: 2rem;
+  }
+  .space-container .space-descricao {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .titulo {
+    font-size: 4rem;
   }
 }

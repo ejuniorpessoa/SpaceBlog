@@ -19,19 +19,26 @@
 </head>
 
 <body>
-    <header class="menu js-menu">
-        <div class="bck-menu"></div>
-        <a class="logo-menu" href="/index.html">Space blog</a>
-        <button id="btn-mobile">Menu</button>
-        <nav id="nav">
-            <ul id="menu-mobile">
-                <li><img src="images/header/home-20.png" alt="home page"><a href="#home">Home</a></li>
-                <li><img src="images/header/question-25.png" alt="faq"><a href="#faq">FAQ</a></li>
-                <li><img src="images/header/assinatura-20.png" alt=""><a href="#signature">Signature</a></li>
-                <li><img src="images/header/book-20.png" alt="history"><a href="history.html">History</a></li>
-                <li><img src="images/header/contact-20.png" alt="contact"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="menu" class="js-menu">
+        <section class="bck-menu">
+        </section>
+        <section id="container-menu">
+            <a id="logo-menu" href="/index.html"><img src="images/header/logo-menu.png" alt="Logo SpaceBlog"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-constrols="menu-mobile"
+                    aria-expanded="false">Menu
+                    <span id="hamburguer">
+                    </span>
+                </button>
+                <ul id="menu-mobile" role="menu">
+                    <li><img src="images/header/home-20.png" alt="home page"><a href="#home">Home</a></li>
+                    <li><img src="images/header/question-25.png" alt="faq"><a href="#faq">FAQ</a></li>
+                    <li><img src="images/header/assinatura-20.png" alt=""><a href="#signature">Signature</a></li>
+                    <li><img src="images/header/book-20.png" alt="history"><a href="history.html">History</a></li>
+                    <li><img src="images/header/contact-20.png" alt="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main class="main">
         <section class="bck-section" id="home">
