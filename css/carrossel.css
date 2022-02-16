@@ -31,18 +31,17 @@
 }
 .btn-carrossel {
   position: absolute;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.4s;
-  font-size: 1.7rem;
   margin-top: -5px;
 }
 .btn-carrossel:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
 }
 .btn-carrossel .fa-chevron-left {
@@ -80,4 +79,43 @@
 .imgAtual {
   transition: all 0.5s;
   background-color: white;
+}
+
+@media screen and (max-width: 532px) {
+  .carrossel {
+    width: 256px;
+    height: 144px;
+    border-radius: 7px;
+    transition: all 0.4s;
+  }
+  .container {
+    width: 1280px;
+  }
+  .image img {
+    width: 256px;
+    height: 144px;
+  }
+  .btn-carrossel {
+    padding: 0px;
+    transition: all 0.4s;
+    margin-top: -10px;
+  }
+  .balls {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 256px;
+    margin-top: -30px;
+  }
+  .balls div {
+    border: 2px solid cyan;
+    padding: 4px;
+  }
+  #back,
+  #next {
+    top: 45%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+  }
 }

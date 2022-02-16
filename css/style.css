@@ -32,25 +32,26 @@ img {
 }
 .main {
   width: 100vw;
-  padding-top: 5rem;
+  padding-top: 75px;
   margin: 0 auto;
 }
 .titulo {
   font-family: "Playfair Display SC", Georgia, serif;
-  max-width: 700px;
+  max-width: 600px;
   font-size: 6rem;
   line-height: 1.2;
   font-weight: 400;
   margin-bottom: 3rem;
   margin-left: 10%;
-  color: rgba(0, 0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
     1px 1px 5px rgba(0, 255, 255, 0.75);
 }
 /* --------- Lista imgs --------- */
 .space-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 80vw;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -64,7 +65,7 @@ img {
   max-width: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
-  flex: 2 0 180px;
+  flex: 2 0 200px;
 }
 .space-lista::-webkit-scrollbar {
   display: block;
@@ -85,11 +86,12 @@ img {
 .space-descricao {
   flex: 2 0 150px;
   margin-left: 2rem;
-  min-width: 400px;
-  max-width: 600px;
+  min-width: 250px;
+  max-width: 500px;
 }
 .space-descricao section {
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 .space-descricao h2 {
   display: flex;
@@ -97,9 +99,9 @@ img {
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.9);
-  text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.75),
-    1px 1px 1px rgba(0, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.25),
+    1px 1px 1px rgba(0, 255, 255, 0.5);
   letter-spacing: 0.15rem;
   font-family: "Poppins", sans-serif;
 }
@@ -109,9 +111,9 @@ img {
   width: 24px;
   height: 8px;
   margin-right: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
-    1px 1px 5px rgba(0, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 1px rgba(0, 0, 139, 0.25),
+    1px 1px 1px rgba(0, 255, 255, 0.5);
 }
 .space-descricao p {
   font-family: Helvetica, Arial, sans-serif;
@@ -151,7 +153,6 @@ img {
   transform: translate3d(0, 0, 0);
 }
 /* ----------- MediaQuery ------------ */
-/* 11367 / 1025 / 801 / 601 / 480 */
 @media screen and (max-width: 1025px) {
   .space-lista {
     max-height: 350px;
@@ -168,6 +169,9 @@ img {
   }
 }
 @media screen and (max-width: 801px) {
+  body {
+    font-size: 0.85rem;
+  }
   .space-lista {
     max-height: 240px;
   }
@@ -178,26 +182,38 @@ img {
     width: 100vw;
   }
   .titulo {
-    font-size: 5rem;
-    text-align: left;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-left: 0rem;
   }
-}
-@media screen and (max-width: 761px) {
   .space-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 0;
   }
   .space-container .space-lista {
     margin-bottom: 2rem;
   }
-  .space-container .space-descricao {
-    margin-bottom: 2rem;
+  .bck-section {
+    padding-bottom: 0;
+  }
+  .space-descricao section h2 {
+    justify-content: center;
+  }
+  .space-descricao h2::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 6px;
+  }
+  .space-descricao h2 {
+    font-size: 1.25rem;
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 532px) {
   .titulo {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }

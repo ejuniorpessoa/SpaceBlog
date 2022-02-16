@@ -75,3 +75,23 @@ dl {
     transform: translate3d(0px, 0, 0);
   }
 }
+
+@media screen and (max-width: 801px) {
+  .faq-lista dt {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .faq-lista dt::before {
+    display: inline-block;
+    width: 16px;
+    height: 6px;
+  }
+}
+
+/* ------------- MediaQuery -------------- */
+@media (max-width: 532px) {
+  .faq-lista dt::before {
+    display: none;
+  }
+}

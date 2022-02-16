@@ -20,9 +20,10 @@
   margin: 0 auto;
   height: 75px;
   position: fixed;
-  opacity: 0.75;
-  background-image: url(../images/header/bck-menu.png);
-  background-position: cover;
+  opacity: 0.9;
+  background-image: url(../images/header/bck-menu.jpeg);
+  z-index: 1;
+  background-position: center;
   background-repeat: no-repeat;
   border-bottom: 3px solid black;
   box-shadow: 2px 2px 5px rgba(0, 0, 139, 0.75),
@@ -64,6 +65,9 @@
   letter-spacing: 0.1em;
   z-index: 7;
 }
+#menu li img {
+  z-index: 10;
+}
 #btn-mobile {
   display: none;
   position: fixed;
@@ -83,10 +87,13 @@
   #menu-mobile {
     display: block;
     position: absolute;
-    width: 50%;
+    width: 100%;
     top: 75px;
-    right: 0rem;
-    background-color: rgba(128, 128, 128, 0.95);
+    right: 0px;
+    background-image: url(../images/header/bck-menu-mobile.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top -300px;
+    opacity: 0.9;
     z-index: 10;
     transition: 0.6s;
     height: 0px;
@@ -94,7 +101,7 @@
     overflow-y: hidden;
   }
   #nav.active #menu-mobile {
-    height: calc(100vh - 75px);
+    height: 12rem;
     visibility: visible;
     overflow-y: auto;
   }
@@ -102,7 +109,10 @@
     padding: 1rem 0;
     margin: 0 1rem;
     width: 100%;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+  #menu-mobile li img {
+    display: none;
   }
   #btn-mobile {
     display: flex;
@@ -139,6 +149,11 @@
   #nav.active #hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+  .bck-menu {
+    border-bottom: none;
+    box-shadow: none;
+    background-image: url(../images/header/bck-menu-mobile.jpeg);
   }
 }
 

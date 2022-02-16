@@ -38,12 +38,12 @@ initShowFaq();
 initScrollAnimation = () => {
     const sections = document.querySelectorAll(".js-scroll");
     if (sections.length !== 0) {
-        const windowMetade = (window.innerHeight * 0.9);
+        const windowMetade = (window.innerHeight * 0.85);
         const activeClass = "ativo";
         animaScroll = () => {
             sections.forEach((section) => {
                 const sectionTop = section.getBoundingClientRect().top;
-                const isSectionVisible = (sectionTop - windowMetade + 150) < 0;
+                const isSectionVisible = (sectionTop - windowMetade + 50) < 0;
                 if (isSectionVisible) {
                     section.classList.add(activeClass);
                 } else {
@@ -63,7 +63,7 @@ initScrollSuave = () => {
             const href = location.search.replace("?", "#");
             const section = document.querySelector(href);
             const topo = section.offsetTop;
-            window.scrollTo({ top: topo - 80, behavior: "smooth" });
+            window.scrollTo({ top: topo - 75, behavior: "smooth" });
         }, 750);
     }
     const navLinksInternos = document.querySelectorAll(".js-menu a[href^='#']");
@@ -73,7 +73,7 @@ initScrollSuave = () => {
             const href = event.currentTarget.getAttribute("href");
             const section = document.querySelector(href);
             const topo = section.offsetTop;
-            window.scrollTo({ top: topo - 80, behavior: "smooth" });
+            window.scrollTo({ top: topo - 75, behavior: "smooth" });
         }
         navLinksInternos.forEach((link) => {
             link.addEventListener("click", scrollToSection);
