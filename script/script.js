@@ -37,18 +37,15 @@ initShowFaq();
 
 initScrollAnimation = () => {
     const sections = document.querySelectorAll(".js-scroll");
+    const activeClass = "ativo";
     if (sections.length !== 0) {
-        const windowMetade = (window.innerHeight * 0.85);
-        const activeClass = "ativo";
+        const windowHeightPage = window.innerHeight;
+        const windowHeightHigh = (windowHeightPage * 0.9 - 20);
         animaScroll = () => {
             sections.forEach((section) => {
                 const sectionTop = section.getBoundingClientRect().top;
-                const isSectionVisible = (sectionTop - windowMetade + 50) < 0;
-                if (isSectionVisible) {
-                    section.classList.add(activeClass);
-                } else {
-                    section.classList.remove(activeClass)
-                }
+                const isSectionVisible = (sectionTop - windowHeightHigh) < 0;
+                if (isSectionVisible) { section.classList.add(activeClass); } else { section.classList.remove(activeClass); }
             });
         }
         animaScroll();

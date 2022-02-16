@@ -9,6 +9,8 @@
   padding: 50px;
   width: 100vw;
   background-image: url(../images/assinaturas/bck-assinaturas.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .signature-container {
   display: flex;
@@ -112,7 +114,6 @@
 .signature .btn-plano:visited {
   color: white;
 }
-
 /* -------------- MediaQuery -------------- */
 @media screen and (max-width: 920px) {
   .signature-container {
@@ -145,5 +146,14 @@
   }
   .signature-container {
     font-size: 0.75rem;
+  }
+  .signature h2 {
+    margin-bottom: 0;
+  }
+  .signature .distance-border {
+    padding-top: 0.5rem;
+  }
+  .signature .btn-plano {
+    margin-top: 1rem;
   }
 }

@@ -75,7 +75,6 @@ dl {
     transform: translate3d(0px, 0, 0);
   }
 }
-
 @media screen and (max-width: 801px) {
   .faq-lista dt {
     font-size: 1rem;

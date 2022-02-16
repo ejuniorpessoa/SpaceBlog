@@ -154,6 +154,8 @@
     border-bottom: none;
     box-shadow: none;
     background-image: url(../images/header/bck-menu-mobile.jpeg);
+    background-repeat: no-repeat;
+    width: 100vw;
   }
 }
 
