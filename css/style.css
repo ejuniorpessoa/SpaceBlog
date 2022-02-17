@@ -24,16 +24,23 @@ img {
   display: block;
   max-width: 100%;
 }
+.box-shadow {
+  box-shadow: 10px 10px 15px rgb(45, 45, 0, 0.2);
+  max-width: 1280px;
+}
 /* ----------BODY---------- */
 .bck-section {
-  background-color: rgba(255, 217, 0, 0.15);
+  background-color: rgba(255, 217, 0, 0.05);
   width: 100vw;
   padding-bottom: 3rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .main {
   width: 100vw;
-  padding-top: 75px;
   margin: 0 auto;
+  padding-top: 75px;
+  background-color: rgba(255, 217, 0, 0.1);
 }
 .titulo {
   font-family: "Playfair Display SC", Georgia, serif;
@@ -84,7 +91,7 @@ img {
   background-color: transparent;
 }
 .space-descricao {
-  flex: 2 0 150px;
+  flex: 2 0 250px;
   margin-left: 2rem;
   min-width: 250px;
   max-width: 500px;
@@ -190,13 +197,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: 2rem;
     padding-bottom: 0;
   }
   .space-container .space-lista {
     margin-bottom: 2rem;
   }
   .bck-section {
+    margin: 0 auto;
     padding-bottom: 0;
   }
   .space-descricao section h2 {
@@ -210,6 +218,11 @@ img {
   }
   .space-descricao h2 {
     font-size: 1.25rem;
+  }
+  .space-descricao {
+    flex: 2 0 300px;
+    min-width: 250px;
+    max-width: 500px;
   }
 }
 @media screen and (max-width: 532px) {

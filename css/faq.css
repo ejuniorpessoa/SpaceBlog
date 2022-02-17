@@ -9,6 +9,8 @@
   background-image: url(../images/faq/faq-bckground.jpg);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .faq-lista {
   max-width: 100%;

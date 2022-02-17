@@ -109,7 +109,13 @@
     padding: 1rem 0;
     margin: 0 1rem;
     width: 100%;
+    color: white;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 139, 0.75),
+      1px 1px 5px rgba(0, 255, 255, 0.75);
+  }
+  #menu li a {
+    color: white;
   }
   #menu-mobile li img {
     display: none;
@@ -117,6 +123,7 @@
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
+    color: black;
     font-size: 1rem;
     font-weight: bold;
     border: none;
